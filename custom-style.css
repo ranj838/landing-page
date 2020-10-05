@@ -1,0 +1,42 @@
+
+body{
+font-family: sans-serif;
+background-color: #3be3a5;
+}
+.nav-link{
+  padding: 20px;
+  margin: 20px;
+  font-size: 15px;
+  color: white;
+}
+section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+.sticky {
+  <!-position: fixed;
+  <!-top: 0;
+  <!-width: 100%;
+}
+header{
+  background-color: black;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#header-img{
+  max-width: 100px;
+}
+#video{
+  padding-top: 250px;
+}
+h1{
+  color: #20bd83;
+  font-size: 30px;
+}

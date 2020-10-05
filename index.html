@@ -1,0 +1,96 @@
+<html>
+<main>
+
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+
+  <style>
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+      @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+      width: 100%;
+    }
+    .flex-container {
+    display: flex;
+    justify-content: center;
+    }
+
+    </style>
+</head>
+
+
+<body>
+  <header id="header">
+      <center>
+      <img id="header-img" src="https://seeklogo.com/images/S/Shorty_and__180_s-logo-CF5D405C35-seeklogo.com.png" alt="">
+
+      <h1>SHORTY´S SKATEBOARDING</h1>
+
+      <nav id="nav-bar" class="navbar">
+        <a class="nav-link" href="#skatevids">NEWS</a>
+        <a class="nav-link" href="#submitemail">OLDIES</a>
+        <a class="nav-link" href="#buyonline">SKATEBOARDING</a>
+      </nav>
+      </center>
+
+  </header>
+      <center>
+        <section id="skatevids"></section>
+
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/u2M5urCaGjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+          <section id="submitemail"></section>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+              <input id="email" type="email" name="email" placeholder="per@per.per">
+              <input type="submit" id="submit"></input>
+            </form>
+
+
+
+      <section id="buyonline"> </section>
+      <div class="flex-container">
+
+        <img src="https://buyxtconline.com/wp-content/uploads/2019/09/download.jpeg" alt="">1</img>
+        <img src="https://buyxtconline.com/wp-content/uploads/2019/09/download.jpeg" alt="">2</img>
+        <img src="https://buyxtconline.com/wp-content/uploads/2019/09/download.jpeg" alt="">3</img>
+
+      </div>
+      </center>
+</body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    } else {
+    header.classList.remove("sticky");
+    }
+    }
+  </script>
+
+</main>
+</html>
